@@ -10,6 +10,6 @@ for i in range(2,n):    #for loop to print sequence from index 2 till n
     c=a+b  #variable used to store the sum of previous two terms
     a=b  #swapping the values to calculate next value of c(fibonacci series)
     b=c  #same reason as above
-    print(c) #printing sequence from inex 2 till n
+    print(c) #printing sequence from index 2 till n
     
     
