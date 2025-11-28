@@ -1,5 +1,5 @@
 
-n=int(input("Enter the number of terms: "))  #Prompting Accepting user input
+n=int(input("Enter a number for Fibonacci series and factorial: "))  #Prompting Accepting user input
 def fibonacci(n):  #function declaration to print Fibonacci series
     a,b=0,1   #first and second term in sequence declared
     if n==1:   #statment to print if n=1
@@ -18,5 +18,14 @@ def fibonacci(n):  #function declaration to print Fibonacci series
         a=b
         b=c
         print(c) #Printing series from index 2
-
+           
 fibonacci(n) #Function called
+
+def factorial (n): # function to calculate factorial
+    f=1  #initializing f to 1
+    for i in range (1,n+1): #executing a loop for value of i from 1 to n+1
+        f=f*i 
+    return f
+
+result=factorial(n) #assigning the value returned by function to result
+print(result) # printing the final factorial value
